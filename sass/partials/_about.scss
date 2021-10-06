@@ -1,0 +1,111 @@
+/*------------------ SECTION 3 about ---------------------*/
+
+.section3 {
+	display: block;
+	margin: 0 auto;
+	background-color: var(--color-background);
+	color: var(--color-black);
+	text-align: center;
+	max-width: 1300px;
+
+	&__text {
+		max-width: 60em;
+		display: inline-block;
+		line-height: 2em;
+		margin: 5em 2em;
+		padding: 0 20px;
+	}
+
+	&__text2 {
+		display: flex;
+		flex-direction: column;
+		margin-top: 50px;
+		padding: 0 20px;
+		color: var(--color-p-text);
+		max-width: 50em;
+		font-size: 20px;
+		display: inline-block;
+		line-height: 2em;
+	}
+}
+
+.experience {
+	&__img {
+		width: 5em;
+		margin-top: 3em;
+	}
+}
+
+.info-container {
+	display: flex;
+	justify-content: center;
+}
+
+.inner {
+	background: var(--link-hover);
+	padding: 2em;
+	border-radius: 10px;
+	width: 600px;
+	clip-path: circle(5% at 50% 10%);
+	transition: all 500ms ease-in-out;
+
+	&:hover {
+		clip-path: circle(75%);
+		background: var(--green);
+	}
+
+	span {
+		font-size: 20px;
+		text-align: center;
+		color: var(--color-white);
+		font-weight: bold;
+		transition: color 2s;
+	}
+
+	&:hover span {
+		color: rgba(255, 255, 255, 0);
+		transition: color .2s;
+	}
+
+	h2 {
+		color: var(--color-white);
+		margin: 0;
+		font-size: 50px;
+		text-align: left;
+	}
+
+	p {
+		color: var(--color-white);
+		font-size: 20px;
+	}
+}
+
+//
+// MEDIA QUERYS --------------Phone-------------------
+
+@media only screen and (max-width: 375px) {
+	.skill-icons img {
+		display: none;
+	}
+
+	.info-container {
+		margin-bottom: 0;
+		padding-bottom: 5em;
+	}
+
+	.arrow {
+		display: none;
+	}
+
+	.inner {
+		padding: 2.5em;
+		margin-top: 5em;
+		width: 300px;
+		clip-path: circle(75%);
+		background: var(--green);
+
+		span {
+			display: none;
+		}
+	}
+}

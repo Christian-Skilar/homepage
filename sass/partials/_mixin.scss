@@ -1,0 +1,50 @@
+@mixin text-gradient {
+	background-image: linear-gradient(
+		to right,
+		var(--color-fade-1),
+		var(--color-fade-2)
+	);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	color: transparent;
+}
+
+@mixin contact-icon {
+	margin: 100px 20px 20px 20px;
+	transition: 150ms;
+	color: var(--color-black);
+	opacity: .8;
+}
+
+@mixin cta-btn {
+	@include margin-left;
+	background: var(--cta-btn-bg);
+	font-family: "adam";
+	color: var(--cta-btn-text);
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px 70px;
+	border: 2px solid var(--link-hover);
+	font-size: 30px;
+	border-radius: 5px;
+	transition: .3s;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		background: var(--cta-btn-bg);
+		cursor: pointer;
+		color: var(--cta-btn-text);
+		padding: 15px 80px;
+	}
+}
+
+@mixin margin-left {
+	margin-left: 40px;
+
+	@media only screen and (max-width: 500px) {
+		margin-left: 0;
+	}
+}

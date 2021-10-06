@@ -1,0 +1,38 @@
+// COLORS
+
+:root {
+	--color-background: #fff;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-h-text: #000;
+	--color-p-text: #000;
+	--dark-mode-btn: #000;
+	--cta-btn-bg: #05c7f2;
+	--cta-btn-text: #fff;
+	--card-color: #fff;
+
+	--color-fade-1: #048abf;
+	--color-fade-2: #05dbf2;
+	--link-hover: #05c7f2;
+	--green: #32c48d;
+
+	// Footer contact
+	--g-mail: #d92525;
+	--linkedin: #0367a6;
+	--github: #7162d9;
+}
+
+// Dark Mode
+
+.darkMode {
+	--color-white: #000;
+	--color-background: #1d1d1d;
+	--color-black: #fff;
+	--color-h-text: #1d1d1d;
+	--color-p-text: #bfbfbf;
+	--dark-mode-btn: #05c7f2;
+	--cta-btn-bg: #ffffff00;
+	--cta-btn-text: #fff !important;
+	--g-mail: #f25c69;
+	--card-color: #3d3d3d;
+}
